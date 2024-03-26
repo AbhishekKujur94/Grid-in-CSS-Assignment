@@ -1,0 +1,38 @@
+justify-items:
+-justify-items property defines how grid items are aligned along the inline (row) axis within their grid area.
+-It applies to the grid container and affects all grid items within it.
+-This property aligns grid items along the row axis within their respective grid cells.
+
+Example:
+
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: center;
+}
+.grid-item{
+  background-color: lightblue;
+  padding: 20px;
+}
+
+In this example, all grid items within the grid container will be centered along the row axis.
+
+
+justify-self:
+-justify-self property defines how a single grid item is aligned along the inline (row) axis within its grid area.
+-It applies directly to individual grid items and overrides the justify-items property for that specific item.
+-This property allows you to control the alignment of a particular grid item within its grid cell.
+
+Example:
+
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.grid-item{
+  background-color: lightblue;
+  padding: 20px;
+  justify-self: end;
+}
+
+In this example, only the grid item with the class .grid-item will be aligned to the end of its grid cell along the row axis, regardless of the justify-items value set for the grid container.

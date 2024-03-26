@@ -1,0 +1,33 @@
+grid-auto-row:
+grid-auto-row is used to define the size of implicitly created rows in the grid.
+
+Example:
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 100px 100px;
+  grid-auto-rows: 50px;
+}
+.grid-item{
+  background-color: lightblue;
+  border: 1px solid #ccc;
+}
+
+In this example, the grid container has two explicitly defined columns of 100px each. If more grid items are added than the specified rows in the grid, additional rows will be created implicitly. The height of these implicitly created rows will be 50px as specified by grid-auto-rows.
+
+grid-auto-column:
+grid-auto-column is used to define the size of implicitly created columns in the grid.
+
+Example:
+
+.grid-container{
+  display: grid;
+  grid-template-rows: 100px 100px;
+  grid-auto-columns: 50px; 
+}
+.grid-item{
+  background-color: lightblue;
+  border: 1px solid #ccc;
+}
+
+In this example, the grid container has two explicitly defined rows of 100px each. If more grid items are added than the specified columns in the grid, additional columns will be created implicitly. The width of these implicitly created columns will be 50px as specified by grid-auto-columns.
